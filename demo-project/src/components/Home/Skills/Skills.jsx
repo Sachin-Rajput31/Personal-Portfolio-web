@@ -1,103 +1,54 @@
-import React from 'react';
+import React from 'react'
 
-const SkillsSection = () => {
-  const technicalSkills = [
-    'Java',
-    'Python',
-    'JavaScript',];
-    const frontend=['HTML',
-    'CSS',
-    'Bootstrap',
-    'React',
-    'Tailwind CSS',];
-    const backend=[
-    'Node.js',
-    'Express',
-    'MySQL',
-    'MongoDB',
-    ];
-    
-    const versioncontrol=[
-    
-    'Git',
-    'VSCode',
-  ];
-
-  const softSkills = [
-    'Problem Solving',
-    'Negotiation',
-    'Adaptation',
-    'AI Prompting (ChatGPT)',
-    'Gmini',
+const Skills = () => {
   
-  ];
-
   return (
-    <section className="py-10 bg-gradient-to-r from-pink-200 to-transparent">
-      <div className="container mx-auto">
-        <h2 className="text-3xl text-red-500 
-       underline underline-offset-4  shadow-indigo-300 shadow-lg  font-extrabold -inset-2 tracking-tighter text-center mb-6">-Skills-</h2>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div>
-            <h3 className="text-2xl font-semibold tracking-wider mb-4">Programming Languages :</h3>
-            <ul className="list-disc  list-inside">
-              {technicalSkills.map((skill, index) => (
-                <li key={index} className="text-xl px-7 hover:scale-110  hover:font-semibold hover:text-cyan-500 ring-indigo-300 mb-2">
-                  {skill}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-2xl font-semibold tracking-wider mb-4"> Frontend :</h3>
-            <ul className="list-disc  list-inside">
-              {frontend.map((skill, index) => (
-                <li key={index} className="text-xl px-7 hover:scale-110  hover:font-semibold hover:text-cyan-500 ring-indigo-300 mb-2">
-                  {skill}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-2xl font-semibold tracking-wider mb-4">Backend :</h3>
-            <ul className="list-disc  list-inside">
-              {backend.map((skill, index) => (
-                <li key={index} className="text-xl px-7 hover:scale-110  hover:font-semibold hover:text-cyan-500 ring-indigo-300 mb-2">
-                  {skill}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-2xl font-semibold tracking-wider mb-4">Version Control/Tools :</h3>
-            <ul className="list-disc  list-inside">
-              {versioncontrol.map((skill, index) => (
-                <li key={index} className="text-xl px-7 hover:scale-110  hover:font-semibold hover:text-cyan-500 ring-indigo-300 mb-2">
-                  {skill}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-
-
-
-          <div>
-            <h3 className="text-2xl font-semibold tracking-wider mb-4">Soft Skills :</h3>
-            <ul className="list-disc  list-inside">
-              {softSkills.map((skill, index) => (
-                <li key={index} className="text-xl px-7  hover:scale-110  hover:font-semibold hover:text-cyan-500 ring-indigo-300 mb-2">
-                  {skill}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-        </div>
+    <div className='mb-9'>
+      <h1 className='text-center m-4 text-3xl font-medium bg-gradient-to-r from-stone-800 to-white from-gray-50 to-black bg-clip-text text-transparent'>Technical Skills-  <span className='text-emerald-700'>FRONTEND</span></h1>
+      <div className='border-2 ml-64 shadow-2xl  border-lime-500 text-center bg-gradient-to-r from-gray-200 to-white rounded h-40 w-40'>
+        <ul className='m-2 hover:'>
+        <li>Html</li>
+        <li>Css</li>
+        <li>Js</li>
+        <li>ReactJs</li>
+        <li>TailwindCss</li>
+        <li>BootStrap</li>
+        </ul>
       </div>
-    </section>
-  );
-};
+      <h1 className='text-center m-4 text-3xl font-medium bg-gradient-to-r from-stone-800 to-white from-gray-50 to-black bg-clip-text text-transparent'>-Technical Skills-  <span className='text-emerald-700'>BACKEND</span></h1>
+      <div className='border-2 ml-64 shadow-2xl  border-lime-500 text-center bg-gradient-to-r from-gray-200 to-white rounded h-40 w-40'>
+        <ul className='m-2 mt-10 space-y-2'>
+        <li>NodeJs</li>
+        <li>ExpressJs</li>
+       
+        </ul>
+      </div>
+      <h1 className='text-center m-4 text-3xl font-medium bg-gradient-to-r from-stone-800 to-white from-gray-50 to-black bg-clip-text text-transparent'>-Technical Skills-  <span className='text-emerald-700'>DATABASE</span></h1>
+      <div className='border-2 ml-64  shadow-2xl  border-lime-500 text-center bg-gradient-to-r from-gray-200 to-white rounded h-40 w-40'>
+        <ul className='m-2 space-y-2 mt-10'>
+        <li>MongoDb</li>
+        <li>Sql</li>
+        <li>MySql</li>
+        
+     
+       
+        </ul>
+      </div>
+      <h1 className='text-center m-4 text-3xl font-medium bg-gradient-to-r from-stone-800 to-white from-gray-50 to-black bg-clip-text text-transparent'>-Technical Skills-  <span className='text-emerald-700'>VERSION-CONTROL</span></h1>
+      <div className='border-2 ml-64 shadow-2xl  border-lime-500 text-center bg-gradient-to-r from-gray-200 to-white rounded h-40 w-40'>
+        <ul className='m-2 hover:'>
+        <li>git</li>
+        <li>vsCode</li>
+        <li>Cursorai</li>
+       
+        
+        
+        </ul>
+      </div>
 
-export default SkillsSection;
+
+     </div>
+  )
+}
+
+export default Skills

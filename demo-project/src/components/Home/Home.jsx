@@ -3,17 +3,17 @@ import { Link } from 'react-router-dom';
 
 export default function Home() {
     return (
-        <div className="mx-auto w-full inset-0 bg-gradient-to-r from-purple-400 to-transparent opacity-80 
+        <div className="mx-auto w-full inset-0 bg-gradient-to-r from-purple-400 to-transparent  
          max-w-7xl">
             <aside className="relative overflow-hidden text-black rounded-lg sm:mx-16 mx-2 sm:py-16">
                 <div className="relative z-10 max-w-screen-xl px-4  pb-20 pt-10 sm:py-24 mx-auto sm:px-6 lg:px-8">
                     <div className="max-w-xl sm:mt-1 px-4 mt-80 space-y-8 text-center sm:text-right sm:ml-auto">
-                        <h2 className="text-xl text-orange-300 drop-shadow-xl  font-bold sm:text-4xl">
-                            Hello! My Name is,
-                            <span className="hidden sm:block text-1xl mt-2 drop-shadow-lg text-lime-500  font-extrabold tracking-tight">SACHIN GIRASE.</span>
+                        <h2 className="text-2xl typing-effect bg-gradient-to-r from-violet-700 to-emerald-500 bg-clip-text text-transparent font-extrabold  drop-shadow-xl  font-semibold sm:text-3xl">
+                            Hello! My Name is Sachin Girase.
                         </h2>
-                        <h4 className='text-3xl '>I am webDeveloper! <br/>
-                        Welcome to my portfolio Website.                     
+                        
+                        <h4 className='text-3xl  bg-gradient-to-r from-black to-slate-400 bg-clip-text text-transparent font-thin'>I am webDeveloper! <br/>
+                        <span >Welcome to my portfolio Website... </span>                    
 </h4>
 
 
@@ -36,18 +36,19 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="absolute inset-0   rounded-full  w-full sm:my-20 sm:pt-1 pt-12 h-full ">
-                    <img className="w-96  rounded-full object-cover h-96 shadow-2xl  hover:shadow-rose-500  translate-x- " src="/Images/photo1.jpg" alt="image" />
+                <div className="absolute left-36 inset-0 w-full h-full sm:my-20 sm:pt-1 pt-12  ">
+               
+                    <img className="skew-y-12  rounded-3xl shadow-2xl shadow-black hover:skew-y-0" src="/Images/photo1.jpg" alt="image"  width={300} />
                
                 </div>
                
             </aside>
 
-            <div className="grid  place-items-center rounded-lg bg-opacity-60 sm:mt-20">
-                <img className="sm:w-96 w-48 lg-w-48 object-cover  rounded-lg bg-white backdrop-blur-lg bg-opacity-50 shadow-2xl p-6 " src="/Images/namaste.jpg" alt="image2" />
+            <div className="grid place-items-center rounded-lg sm:mt-20">
+                <img className="sm:w-96 w-48 lg-w-48 object-cover   backdrop-blur-lg bg-opacity-50 shadow-2xl p-6 " src="/Images/namaste.jpg" alt="image2"  />
             </div>
 
-            <h1 className="text-center text-indigo-700 text-2xl sm:text-5xl py-10 font-medium animate-bounce  tracking-tight">Thanks for Reaching Me!</h1>
+            <h1 className="text-center text-gray-600 text-2xl sm:text-5xl py-10 font-medium animate-pulse  tracking-tight">Thanks for Reaching Me🙏!</h1>
         </div>
     );
 }

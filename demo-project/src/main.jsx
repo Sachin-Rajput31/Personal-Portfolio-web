@@ -12,6 +12,7 @@ import User from './components/User/User.jsx'
 
 import Github, { githubInfoLoader } from './components/Github/Github.jsx'
 import Skills from './components/Home/Skills/Skills.jsx'
+import SignIn from './components/SignIn/SignIn.jsx'
 
 
  const router = createBrowserRouter([
@@ -24,6 +25,10 @@ import Skills from './components/Home/Skills/Skills.jsx'
       {path:"",
         element:<Home/>
 
+      },
+      {
+        path:'/signin',
+        element:<SignIn/>
       },
       {
 

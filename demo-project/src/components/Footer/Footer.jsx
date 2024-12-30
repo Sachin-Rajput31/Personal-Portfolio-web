@@ -5,28 +5,28 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 export default function Footer() {
     return (
-        <footer className=" inset-0 bg-gradient-to-r from-indigo-100 to-transparent opacity-70 border-y">
+        <footer className=" inset-0  border-y">
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
                         <Link to="/" className="flex items-center">
                            
-                               <div className="mr-3 h-16  font-mono font-extrabold text-pink-500 drop-shadow-lg text-tracking-tight  text-2xl "> Sachin Girase</div>
+                               <div className="mr-3 bg-gradient-to-r from-violet-400 to-pink-300 bg-clip-text text-transparent  font-bold  text-2xl "> Sachin Girase</div>
                                 
                         
                         </Link>
                     </div>
                     <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                         <div>
-                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Resources</h2>
+                            <h2 className="mb-6 text-sm font-semibold  text-gray-900 uppercase">Resources</h2>
                             <ul className="text-gray-500 font-medium">
                                 <li className="mb-4">
-                                    <Link to="/" className="hover:underline">
+                                    <Link to="/" className="hover:underline ">
                                         Home
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/about" className="hover:underline">
+                                    <Link to="/about" className="hover:underline ">
                                         About
                                     </Link>
                                 </li>
@@ -48,7 +48,7 @@ export default function Footer() {
                                     </a>
                                 </li>
                                 <li>
-                                    <Link to="/" className="hover:underline">
+                                    <Link to="/" className="hover:underline ">
                                         Discord
                                     </Link>
                                     
