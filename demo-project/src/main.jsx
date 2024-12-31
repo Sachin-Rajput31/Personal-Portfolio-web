@@ -10,10 +10,10 @@ import Contact from './components/Contact/Contact.jsx'
 import User from './components/User/User.jsx'
 
 
+
 import Github, { githubInfoLoader } from './components/Github/Github.jsx'
 import Skills from './components/Home/Skills/Skills.jsx'
 import SignIn from './components/SignIn/SignIn.jsx'
-
 
  const router = createBrowserRouter([
 
@@ -22,12 +22,14 @@ import SignIn from './components/SignIn/SignIn.jsx'
     element :<Layout/>,
     children : [
       
-      {path:"",
-        element:<Home/>
-
-      },
       {
-        path:'/signin',
+        path: "/",
+        element: <Home />,
+      },
+      
+
+      {
+        path:'signin',
         element:<SignIn/>
       },
       {
@@ -51,10 +53,12 @@ import SignIn from './components/SignIn/SignIn.jsx'
         element: <Github/>
       },
       {
-loader:{githubInfoLoader},
-path: 'github',
-element: <Github/>
+        path: "github",
+        element: <Github />,
+        loader: githubInfoLoader, 
       },
+      
+
       {
 
         path:"skills",
@@ -67,6 +71,7 @@ element: <Github/>
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+   
    <RouterProvider router={router} />
   </StrictMode>,
 )
